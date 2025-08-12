@@ -19,10 +19,14 @@ const CookieConsent = () => {
   }, []);
 
   const handleConsent = (choice) => {
+    const language = "en"; // This should come from user selection
+    const name = "John"; // Also from user input
+
     axios
       .post(
         "http://localhost:5000/api/cookies/set",
-        { consent: choice },
+        // { consent: choice },
+        { consent: choice, language, name },
         { withCredentials: true }
       )
       .then(() => {
