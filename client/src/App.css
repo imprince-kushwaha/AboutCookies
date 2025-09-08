@@ -1,0 +1,21 @@
+/* Remove hover/active backgrounds in TieredMenu */
+@layer primereact {
+  .custom-tieredmenu .p-menuitem-link:hover,
+  .custom-tieredmenu .p-menuitem-link:focus,
+  .custom-tieredmenu .p-menuitem-link:active {
+    background-color: transparent !important;
+  }
+}
+
+/* Underline only the selected item with white border */
+.custom-tieredmenu .p-menuitem-link {
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+.custom-tieredmenu .p-menuitem-link:focus,
+.custom-tieredmenu .p-menuitem-link:hover {
+  background-color: transparent !important;
+}
+.custom-tieredmenu .p-menuitem-link.p-menuitem-selected {
+  border-bottom-color: white !important;
+}

@@ -1,2 +1,83 @@
 @import "tailwindcss";
 
+/* Show MegaMenu dropdown on hover */
+.custom-megamenu .p-megamenu-root-list > .p-menuitem:hover > .p-submenu-list {
+  display: flex !important;
+  flex-direction: row !important; /* Force horizontal */
+  gap: 16px;
+  opacity: 1 !important;
+  visibility: visible !important;
+  /* background: white; */
+  padding: 12px;
+  border-radius: 6px;
+
+}
+
+.p-megamenu {
+  background-color: transparent;
+  /* color: white !important; */
+}
+
+
+
+
+
+
+
+
+
+/* Make all menu labels white */
+.custom-megamenu .p-menuitem-link,
+.custom-megamenu .p-menuitem-link .p-menuitem-text {
+  color: white !important;
+}
+.p-icon{
+  color: white !important;
+}
+.p-menuitem-active .p-highlight{
+  background: transparent;
+}
+/* Keep icons white too */
+.custom-megamenu .p-menuitem-icon {
+  color: white !important;
+}
+
+
+
+
+.p-float-label{
+  margin-bottom: 35px !important; /* or approx 2.5rem or less*/
+}
+
+.p-inputnumber {
+  width: 100%;
+}
+
+.custom-input {
+  border: none !important;
+  border-bottom: 1px solid #ccc !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  width: 100%;
+  padding: 0 0.5rem !important;
+  font-size: 1rem; 
+}
+
+.custom-input:focus {
+  border-bottom: 2px solid #a07353 !important; /* Optional: highlight color */
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.custom-button {
+  background-color: #a07353 !important;
+  border: none !important;
+  color: white !important;
+  padding: 0.75rem 2rem !important;
+}
+
+.custom-button:hover {
+  background-color: #865e3f !important; /* Slightly darker on hover */
+}
+
